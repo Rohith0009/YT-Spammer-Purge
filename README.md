@@ -35,7 +35,7 @@
 
 <br>
 
-**What Is This?** - Allows you to filter and search for spammer comments on your channel and other's channel(s) in many different ways AND delete/report them all at once (see features below).
+**What Is This?** - Allows you to filter and search for spammer comments on your channel and others' channels in many different ways AND delete/report them all at once (see features below).
 
 **How to Download:** Click the "[Releases]" link on the right, then on the latest release, under 'Assets' click to download "YTSpammerPurge.exe". (You might have to click "Assets" to view the files for the release)
 > * [Linux Setup Instructions](https://github.com/ThioJoe/YouTube-Spammer-Purge/wiki/Linux-Installation-Instructions)
@@ -64,7 +64,7 @@
 * Ability to create a config file to skip pre-set options
 * Rich text log files
 * 'Recovery Mode' option to re-instate previously deleted comments
-* Displays "match samples" after printing comments list to easily spot false positives
+* Displays "match samples" after printing the comments list to spot false positives easily
 * Ability to exclude selected authors before deletion/reporting
 
 ## Purpose
@@ -75,7 +75,7 @@ Therefore I created this script to allow you to easily scan for and purge these 
 
 ## 🤔 Pro-Tip If This Seems Sketchy: Limiting The App's Access 🤔
 
-If you feel sketched out about giving the app the required high level permissions to your channel (very understandable), you could instead use the app in 'moderator mode' (set in the config file). First, some context: When you grant access to another channel to be a moderator for your channel, they are able to mark comments as 'held for review', and this permission works through the API as well. 
+If you feel sketched out about giving the app the required high-level permissions to your channel (very understandable), you could instead use the app in 'moderator mode' (set in the config file). First, some context: When you grant access to another channel to be a moderator for your channel, they are able to mark comments as 'held for review', and this permission works through the API as well. 
 
 _Therefore,_ what you could do is create a _blank dummy-google-account_ with nothing on it except an empty new channel. Then you can grant _that_ channel permission to be a moderator, and use the app through _the dummy moderator account_. **This way, you know that the app will never have the ability to do more than mark comments as held for review** (which the app supports) on your main channel, and have no other access to your account's data. You just won't be able to ban the spammers through this app directly, but you can still remove/hide their comments instead of deleting them. Just make sure to create the google cloud API project on the dummy account instead.
 
@@ -83,9 +83,9 @@ Read some additional details about 'moderator mode' on the [wiki page here][Mode
 
 ## Usage Notes -READ THIS
 
-1. To use this script, you will need to obtain your own API credentials file by making a project via the Google Developers Console (aka 'Google Cloud Platform'). The credential file should be re-named `client_secret.json` and be placed in the same directory as this script. [See Instructions Here][API Key].
+1. To use this script, you will need to obtain your own API credentials file by making a project via the Google Developers Console (aka 'Google Cloud Platform'). The credential file should be renamed `client_secret.json` and be placed in the same directory as this script. [See Instructions Here][API Key].
 
-2. **IF IT FREEZES** while scanning, it is probably because you clicked within the command prompt window and entered "selection mode" which pauses everything. **To unfreeze it, simply right click within the window, or press the Escape key.**
+2. **IF IT FREEZES** while scanning, it is probably because you clicked within the command prompt window and entered "selection mode" which pauses everything. **To unfreeze it, simply right-click within the window, or press the Escape key.**
 
 3. I'm a total amateur, so if something doesn't work I'll try to fix it but might not even know how, so don't expect too much. Therefore **I OFFER NO WARRANTY OR GUARANTEE FOR THIS SCRIPT. USE AT YOUR OWN RISK.** I tested it on my own and implemented some failsafes as best as I could, but there could always be some kind of unexpected bug. You should inspect the code yourself.
 
@@ -145,7 +145,7 @@ Read some additional details about 'moderator mode' on the [wiki page here][Mode
 
 ## Installation
 
-If using the python script version (not the exe), there is a requirements.txt with necessary modules. Created with Python 3.9.7
+If using the python script version (not the exe), there is a requirements.txt with the necessary modules. Created with Python 3.9.7
 
 Either way, you DO need to acquire your own API credentials file to access the YouTube API - [See Instructions Here][API Key].
 
@@ -156,9 +156,9 @@ Either way, you DO need to acquire your own API credentials file to access the Y
 On Windows, you may download the latest EXE file from the [Releases page][Releases], or you may install YTSpammerPurge manually.
 If you are not sure how to install YTSpammerPurge manually, it is probably best to install the EXE.
 
-#### Linux / MacOS
+#### Linux / macOS
 
-The easiest way to install YTSpammerPurge is using the install script.
+The easiest way to install YTSpammerPurge is by using the install script.
 
 ```bash
 bash <(curl -s https://raw.githubusercontent.com/ThioJoe/YT-Spammer-Purge/main/install.sh)
